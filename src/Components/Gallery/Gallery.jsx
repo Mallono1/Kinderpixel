@@ -5,6 +5,7 @@ import gallery_2 from '../../assets/img/gallery-2.jpg'
 import gallery_3 from '../../assets/img/gallery-3.jpg'
 import gallery_4 from '../../assets/img/gallery-4.jpg'
 
+
 function Gallery() {
   return (
     <div className='gallery'>
@@ -14,6 +15,7 @@ function Gallery() {
         <img src={gallery_3} alt='' />
         <img src={gallery_4} alt='' />
     </div>
+    <button>test </button>
     </div>
   )
 }
