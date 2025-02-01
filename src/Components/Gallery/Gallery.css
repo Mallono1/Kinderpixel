@@ -15,3 +15,9 @@
     padding: 10px;
     border-radius: 20px;    
 }
+.btn-arrow{
+    background-color: aquamarine;
+    max-height: 10;
+    text-align: center;
+    
+}

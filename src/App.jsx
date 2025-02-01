@@ -12,13 +12,16 @@ const App = () => {
       <Navbar />
       <Hero />
       <div className="container">
-      <Title subTitle='Unsere Galerie' title='Aller Alterstufen' />
-      <Programs />
-      <About />
-      <Title subTitle='Gallery' title='Fotos Aller Alterstufen' />
-      <Gallery />
+        <Title subTitle="Unsere Galerie" title="Aller Alterstufen" />
+        <Programs />
+        <About />
+        <Title subTitle="Gallery" title="Fotos Aller Alterstufen" />
+        <Gallery />
+        <Title
+          subTitle="Testimonials"
+          title="What Children Says about Kinderpixel"
+        />
       </div>
-      
     </div>
   );
 };
