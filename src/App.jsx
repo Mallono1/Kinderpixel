@@ -5,6 +5,7 @@ import Programs from "./Components/Programs/Programs";
 import Title from "./Components/Title/Title";
 import About from "./Components/About/About";
 import Gallery from "./Components/Gallery/Gallery";
+import Testimonials from "./Components/Testimonials/Testimonials";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           subTitle="Testimonials"
           title="What Children Says about Kinderpixel"
         />
+        <Testimonials />
       </div>
     </div>
   );
