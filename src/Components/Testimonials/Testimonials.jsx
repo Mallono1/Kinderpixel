@@ -15,12 +15,13 @@ function Testimonials() {
       <div className="slider">
         <ul>
           <li>
-            <div className="slide">
-              <div className="user-info"></div>
-              <img src={Testimonials_1} alt=""></img>
-              <div>
-                <h3>Familie Schulz</h3>
-                <span>Grundschule Berlin</span>
+          <div className="slide">
+              <div className="user-info">
+                <img src={Testimonials_1} alt=""/>
+                <div>             
+                  <h3>Familie Schulz</h3>
+                  <span>Grundschule Berlin</span>
+                </div>
               </div>
               <p>
                 Meine Tochter hat am Wettbewerb teilgenohmen und hatte ganz viel
@@ -33,11 +34,12 @@ function Testimonials() {
           </li>
           <li>
             <div className="slide">
-              <div className="user-info"></div>
-              <img src={Testimonials_2} alt=""></img>
-              <div>
-                <h3>Familie Schulz</h3>
-                <span>Grundschule Berlin</span>
+              <div className="user-info">
+                <img src={Testimonials_2} alt=""/>
+                <div>             
+                  <h3>Familie Schulz</h3>
+                  <span>Grundschule Berlin</span>
+                </div>
               </div>
               <p>
                 Meine Tochter hat am Wettbewerb teilgenohmen und hatte ganz viel
@@ -49,12 +51,13 @@ function Testimonials() {
             </div>
           </li>
           <li>
-            <div className="slide">
-              <div className="user-info"></div>
-              <img src={Testimonials_3} alt=""></img>
-              <div>
-                <h3>Familie Schulz</h3>
-                <span>Grundschule Berlin</span>
+          <div className="slide">
+            <div className="user-info">
+                <img src={Testimonials_3} alt=""/>
+                <div>             
+                  <h3>Familie Schulz</h3>
+                  <span>Grundschule Berlin</span>
+                </div>
               </div>
               <p>
                 Meine Tochter hat am Wettbewerb teilgenohmen und hatte ganz viel
@@ -66,12 +69,13 @@ function Testimonials() {
             </div>
           </li>
           <li>
-            <div className="slide">
-              <div className="user-info"></div>
-              <img src={Testimonials_4} alt=""></img>
-              <div>
-                <h3>Familie Schulz</h3>
-                <span>Grundschule Berlin</span>
+          <div className="slide">
+            <div className="user-info">
+                <img src={Testimonials_4} alt=""/>
+                <div>             
+                  <h3>Familie Schulz</h3>
+                  <span>Grundschule Berlin</span>
+                </div>
               </div>
               <p>
                 Meine Tochter hat am Wettbewerb teilgenohmen und hatte ganz viel
