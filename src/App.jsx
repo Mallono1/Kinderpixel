@@ -18,7 +18,11 @@ const App = () => {
         <Title subTitle="Unsere Galerie" title="Aller Alterstufen" />
         <Programs />
         <About />
-        <Title subTitle="Gallery" title="Fotos Aller Alterstufen" id='gallery/>
+        <Title
+          subTitle="Gallery"
+          title="Fotos Aller Alterstufen"
+          id="gallery"
+        />
         <Gallery />
         <Title
           subTitle="Testimonials"

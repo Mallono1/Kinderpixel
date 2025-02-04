@@ -17,7 +17,6 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
-      <img src={logo} alt="" className="logo" />
       <ul>
         <li>
           <Link to="home" smooth={true} offset={0} duration={500}>
@@ -51,6 +50,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <img src={logo} alt="" className="logo" />
     </nav>
   );
 };
