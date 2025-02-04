@@ -41,6 +41,22 @@ function Contact() {
             required
           />
           <label>Phone Number</label>
+          <input
+            type="Telnr."
+            name="phone"
+            placeholder="Enter your mobile number"
+            required
+          />
+          <label>Write your massages here</label>
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+          <button type="submit" className="btn">
+            Submit now
+          </button>
         </form>
       </div>
     </div>
