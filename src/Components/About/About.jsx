@@ -1,21 +1,24 @@
-import React from 'react'
-import './About.css'
-import about_img from '../../assets/img/about.jpg'
-import playbutton from '../../assets/img/Playbutton.png'
+import React from "react";
+import "./About.css";
+import about_img from "../../assets/img/about.jpg";
+import playbutton from "../../assets/img/Playbutton.png";
 
 const About = () => {
   return (
-    <div className='about'>
-        <div className='about-left'>
-            <img src={about_img} alt='about_img' className='about_img' />
-            <img src={playbutton} alt='playbutton' className='playbutton' />
-        </div>
-        <div className='about-right'>
+    <div className="about" id="about">
+      <div className="about-left">
+        <img src={about_img} alt="about_img" className="about_img" />
+        <img src={playbutton} alt="playbutton" className="playbutton" />
+      </div>
+      <div className="about-right">
         <h2>About Kinderpixel</h2>
-        <p>Wir fördern die Kraativität von Kindern und annimieren mehr Zeit mit Stift und Papier zu verbringen. </p>
-        </div>
+        <p>
+          Wir fördern die Kraativität von Kindern und annimieren mehr Zeit mit
+          Stift und Papier zu verbringen.{" "}
+        </p>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

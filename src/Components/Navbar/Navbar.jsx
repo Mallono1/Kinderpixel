@@ -24,11 +24,31 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        <li>About us</li>
-        <li>Gallery</li>
-        <li>Wettbewerb</li>
         <li>
-          <button className="btn">Kontakt</button>
+          <Link to="about" smooth={true} offset={-150} duration={500}>
+            About us
+          </Link>
+        </li>
+        <li>
+          <Link to="gallery" smooth={true} offset={-200} duration={500}>
+            Gallery
+          </Link>
+        </li>
+        <li>
+          <Link to="wettbewerb" smooth={true} offset={-150} duration={500}>
+            Wettbewerb
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="contact"
+            smooth={true}
+            offset={0}
+            duration={500}
+            // className="btn"
+          >
+            Kontakt
+          </Link>
         </li>
       </ul>
     </nav>

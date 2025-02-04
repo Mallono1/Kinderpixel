@@ -14,11 +14,11 @@ const App = () => {
     <div>
       <Navbar />
       <Home />
-      <div className="container">
+      <div className="container" id="wettbewerb">
         <Title subTitle="Unsere Galerie" title="Aller Alterstufen" />
         <Programs />
         <About />
-        <Title subTitle="Gallery" title="Fotos Aller Alterstufen" />
+        <Title subTitle="Gallery" title="Fotos Aller Alterstufen" id='gallery/>
         <Gallery />
         <Title
           subTitle="Testimonials"
