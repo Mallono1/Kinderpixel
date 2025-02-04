@@ -25,21 +25,23 @@ nav ul li{
     background: #d353c2fb;
     transition: 0,8s;
 }
-
+.menu-icon{
+    display: none;
+}
 /* ----- media query ---------*/
 
-/* @media(max-width: 597px){
+@media(max-width: 597px){
    nav{
     padding: 15px 0;
    }
    nav ul{
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0px;
     bottom: 0;
     background: #d353c2fb;
     z-index: -1;
-    width: 100px;
+    width: 150px;
     padding-top: 70px;
     transition: 0.5s;
    }
@@ -47,7 +49,16 @@ nav ul li{
     display: block;
     margin: 25px 40px;
    }
-    }  */
+   .menu-icon{
+    display: block;
+    width: 30px;
+    cursor: pointer;
+   }
+   .hide-mobile-menu{
+    left: -200px;
+   }
+} 
+
     
     
 
