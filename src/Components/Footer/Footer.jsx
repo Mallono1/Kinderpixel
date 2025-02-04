@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="fotter">
+    <div className="footer">
       <p>copyright 2025 Kinderpixel. All rights reserved.</p>
       <ul>
         <li>Terms of Services</li>
