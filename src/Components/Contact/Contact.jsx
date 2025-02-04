@@ -6,6 +6,31 @@ import phone_icon from "../../assets/img/Telefon_Button.png";
 import location_icon from "../../assets/img/G-Maps_Button.png";
 
 function Contact() {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "4d073875-c858-4954-97e7-2c6f3eaac7d3");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="contact">
       <div className="contact-kpi">
@@ -32,7 +57,7 @@ function Contact() {
         </ul>
       </div>
       <div className="contact-kpi">
-        <form>
+        <form onSubmit={onSubmit}>
           <label>Your Name</label>
           <input
             type="text"
@@ -58,6 +83,7 @@ function Contact() {
             Submit now
           </button>
         </form>
+        <span> {result} </span>
       </div>
     </div>
   );
