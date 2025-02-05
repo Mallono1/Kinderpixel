@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import Programs from "./Components/Programs/Programs";
@@ -18,11 +19,8 @@ const App = () => {
         <Title subTitle="Unsere Galerie" title="Aller Alterstufen" />
         <Programs />
         <About />
-        <Title
-          subTitle="Gallery"
-          title="Fotos Aller Alterstufen"
-          id="gallery"
-        />
+        <Title subTitle="Gallery" title="Fotos Aller Alterstufen" />
+        <a id="example">The currently best rated pictures</a>
         <Gallery />
         <Title
           subTitle="Testimonials"

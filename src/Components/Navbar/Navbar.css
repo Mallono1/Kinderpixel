@@ -30,7 +30,7 @@ nav ul li{
 }
 /* ----- media query ---------*/
 
-@media(max-width: 597px){
+@media(max-width: 732px){
    nav{
     padding: 15px 0;
    }
@@ -44,6 +44,7 @@ nav ul li{
     width: 150px;
     padding-top: 70px;
     transition: 0.5s;
+    opacity: 0.95;
    }
    nav ul li{
     display: block;

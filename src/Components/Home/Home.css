@@ -15,11 +15,11 @@
     max-width: 800px;
 }
 .home-text h1{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
 }
 .home-text h2{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
 }
 .home-text p{
@@ -30,8 +30,8 @@
 
 /* ----- media query ---------*/
 
-@media(max-width: 597px){
+@media(max-width: 732px){
     .home{
-        margin-top: 60px;
+        margin-top: 70px;
     }
 }

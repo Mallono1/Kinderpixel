@@ -30,20 +30,27 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link to="wettbewerb" smooth={true} offset={-150} duration={500}>
+            Wettbewerb
+          </Link>
+        </li>
+
+        <li>
+          <Link to="example" smooth={true} offset={-200} duration={500}>
+            Examples
+          </Link>
+        </li>
+        <li>
           <Link to="about" smooth={true} offset={-150} duration={500}>
             About us
           </Link>
         </li>
         <li>
-          <Link to="gallery" smooth={true} offset={-200} duration={500}>
-            Gallery
+          <Link to="testimonials" smooth={true} offset={-250} duration={500}>
+            Testimonials
           </Link>
         </li>
-        <li>
-          <Link to="wettbewerb" smooth={true} offset={-150} duration={500}>
-            Wettbewerb
-          </Link>
-        </li>
+
         <li>
           <Link
             to="contact"
