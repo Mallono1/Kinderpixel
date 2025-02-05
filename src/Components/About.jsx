@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
-import about_img from "../../assets/img/about.jpg";
-import playbutton from "../../assets/img/Playbutton.png";
+import about_img from "../assets/img/about.jpg";
+import playbutton from "../assets/img/Playbutton.png";
 
 const About = () => {
   return (

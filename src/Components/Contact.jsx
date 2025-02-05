@@ -1,9 +1,9 @@
 import React from "react";
 import "./Contact.css";
-import msg_icon from "../../assets/img/Email Button.png";
-import mail_icon from "../../assets/img/@_Button.png";
-import phone_icon from "../../assets/img/Telefon_Button.png";
-import location_icon from "../../assets/img/G-Maps_Button.png";
+import msg_icon from "../assets/img/Email_Button.png";
+import mail_icon from "../assets/img/@_Button.png";
+import phone_icon from "../assets/img/Telefon_Button.png";
+import location_icon from "../assets/img/G-Maps_Button.png";
 
 function Contact() {
   const [result, setResult] = React.useState("");

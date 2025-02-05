@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
+import { Link as LinkRouter } from "react-router-dom";
 import logo from "../../assets/img/hand-logo2.png";
-import { Link as LinkScroll } from "react-scroll";
 import menu_icon from "../../assets/img/SidebarNavi.png";
 
 const Navbar = () => {
@@ -25,54 +25,18 @@ const Navbar = () => {
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
-          <LinkScroll to="home" smooth={true} offset={0} duration={500}>
-            Home
-          </LinkScroll>
+          <LinkRouter to="/">Home</LinkRouter>
         </li>
         <li>
-          <LinkScroll
-            to="wettbewerb"
-            smooth={true}
-            offset={-250}
-            duration={500}
-          >
-            Wettbewerb
-          </LinkScroll>
+          <LinkRouter to="/Wettbewerb">Wettbewerb</LinkRouter>
         </li>
-        <li>
-          <LinkScroll to="about" smooth={true} offset={-150} duration={500}>
-            About us
-          </LinkScroll>
-        </li>
+        <li>About us</li>
 
-        <li>
-          <LinkScroll to="example" smooth={true} offset={-200} duration={500}>
-            Rating
-          </LinkScroll>
-        </li>
+        <li>Rating</li>
 
-        <li>
-          <LinkScroll
-            to="testimonials"
-            smooth={true}
-            offset={-250}
-            duration={500}
-          >
-            Testimonials
-          </LinkScroll>
-        </li>
+        <li>Testimonials</li>
 
-        <li>
-          <LinkScroll
-            to="contact"
-            smooth={true}
-            offset={0}
-            duration={500}
-            // className="btn"
-          >
-            Kontakt
-          </LinkScroll>
-        </li>
+        <li>Kontakt</li>
       </ul>
       <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
       <img src={logo} alt="" className="logo" />

@@ -1,11 +1,11 @@
 import React from "react";
 import "./Gallery.css";
-import gallery_1 from "../../assets/img/Program_1.jpg";
-import gallery_2 from "../../assets/img/Program_2.jpg";
-import gallery_3 from "../../assets/img/Program_3.jpg";
-import gallery_icon_1 from "../../assets/img/hand-logo2.png";
-import gallery_icon_2 from "../../assets/img/hand-logo2.png";
-import gallery_icon_3 from "../../assets/img/hand-logo2.png";
+import gallery_1 from "../assets/img/Program_1.jpg";
+import gallery_2 from "../assets/img/Program_2.jpg";
+import gallery_3 from "../assets/img/Program_3.jpg";
+import gallery_icon_1 from "../assets/img/hand-logo2.png";
+import gallery_icon_2 from "../assets/img/hand-logo2.png";
+import gallery_icon_3 from "../assets/img/hand-logo2.png";
 
 const Gallery = () => {
   return (

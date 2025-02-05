@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import "./Testimonials.css";
-import next_icon from "../../assets/img/pfeil_rechts_blau.png";
-import back_icon from "../../assets/img/pfeil_links_blau.png";
-import Testimonials_1 from "../../assets/img/Testimonials_1.jpg";
-import Testimonials_2 from "../../assets/img/Testimonials_2.jpg";
-import Testimonials_3 from "../../assets/img/Testimonials_3.jpg";
-import Testimonials_4 from "../../assets/img/Testimonials_4.jpg";
+import next_icon from "../assets/img/pfeil_rechts_blau.png";
+import back_icon from "../assets/img/pfeil_links_blau.png";
+import Testimonials_1 from "../assets/img/Testimonials_1.jpg";
+import Testimonials_2 from "../assets/img/Testimonials_2.jpg";
+import Testimonials_3 from "../assets/img/Testimonials_3.jpg";
+import Testimonials_4 from "../assets/img/Testimonials_4.jpg";
 
 function Testimonials() {
   const slider = useRef();
