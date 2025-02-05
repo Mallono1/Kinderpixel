@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/img/hand-logo2.png";
-import { Link } from "react-scroll";
+import { Link as LinkScroll } from "react-scroll";
 import menu_icon from "../../assets/img/SidebarNavi.png";
 
 const Navbar = () => {
@@ -25,34 +25,45 @@ const Navbar = () => {
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
-          <Link to="home" smooth={true} offset={0} duration={500}>
+          <LinkScroll to="home" smooth={true} offset={0} duration={500}>
             Home
-          </Link>
+          </LinkScroll>
         </li>
         <li>
-          <Link to="wettbewerb" smooth={true} offset={-150} duration={500}>
+          <LinkScroll
+            to="wettbewerb"
+            smooth={true}
+            offset={-250}
+            duration={500}
+          >
             Wettbewerb
-          </Link>
-        </li>
-
-        <li>
-          <Link to="example" smooth={true} offset={-200} duration={500}>
-            Examples
-          </Link>
+          </LinkScroll>
         </li>
         <li>
-          <Link to="about" smooth={true} offset={-150} duration={500}>
+          <LinkScroll to="about" smooth={true} offset={-150} duration={500}>
             About us
-          </Link>
-        </li>
-        <li>
-          <Link to="testimonials" smooth={true} offset={-250} duration={500}>
-            Testimonials
-          </Link>
+          </LinkScroll>
         </li>
 
         <li>
-          <Link
+          <LinkScroll to="example" smooth={true} offset={-200} duration={500}>
+            Rating
+          </LinkScroll>
+        </li>
+
+        <li>
+          <LinkScroll
+            to="testimonials"
+            smooth={true}
+            offset={-250}
+            duration={500}
+          >
+            Testimonials
+          </LinkScroll>
+        </li>
+
+        <li>
+          <LinkScroll
             to="contact"
             smooth={true}
             offset={0}
@@ -60,7 +71,7 @@ const Navbar = () => {
             // className="btn"
           >
             Kontakt
-          </Link>
+          </LinkScroll>
         </li>
       </ul>
       <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />

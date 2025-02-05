@@ -30,7 +30,7 @@ nav ul li{
 }
 /* ----- media query ---------*/
 
-@media(max-width: 732px){
+@media(max-width: 750px){
    nav{
     padding: 15px 0;
    }

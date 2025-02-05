@@ -1,0 +1,23 @@
+.rating{
+    margin: 50px auto;
+    width: 90%;
+    text-align: center; 
+}
+.ratingFotos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+}
+.ratingFotos img{
+    width: 23%;
+    padding: 10px;
+    border-radius: 20px;    
+}
+.btn-arrow{
+    background-color: aquamarine;
+    max-height: 10;
+    text-align: center;
+    
+}
