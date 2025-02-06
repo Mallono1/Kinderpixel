@@ -19,7 +19,7 @@ function Home() {
           <Gallery />
           <About />
           <Title subTitle="Rating" title="Fotos Aller Alterstufen" />
-          <a id="example">The currently best rated pictures</a>
+          
           <Rating />
           <br></br>
           <Title

@@ -8,7 +8,9 @@ import rating_4 from "../assets/img/gallery-4.jpg";
 function Rating() {
   return (
     <div className="rating">
+    <p id="example">The currently best rated pictures</p>
       <div className="ratingFotos">
+      
         <img src={rating_1} alt="" />
         <img src={rating_2} alt="" />
         <img src={rating_3} alt="" />
