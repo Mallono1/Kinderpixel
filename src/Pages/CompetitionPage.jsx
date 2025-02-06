@@ -5,11 +5,12 @@ import Gallery from "../Components/Gallery";
 function CompetitionPage() {
   return (
     <div>
-      <p> <Gallery /></p>
+      <p className="gallarypage"> <Gallery /></p>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
+      <h2 style={{alignItems:"center"}}>Chose your Agbe</h2>
       
     </div>
   );

@@ -1,6 +1,6 @@
 .gallerys{
     margin: 80px auto;
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,13 +8,16 @@
 }
 .gallery img{
     width: 100%;
+    
     border-radius: 10px;
     display: block;
+   
 }
 .gallery{
     flex-basis: 30%;
     position: relative;
 }
+
 .caption{
     border-radius: 10px;
     position: absolute;
@@ -32,6 +35,8 @@
     opacity: 0;
     padding-top: 70%;
     transition: 0.4s;
+    font-size: 30px;
+    font-weight: 600;
     
 }
 .caption img{

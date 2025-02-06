@@ -1,8 +1,6 @@
-div p{
-    max-width: 700px;
-    justify-content: center;
-    display: flex;
-    text-align: center;
+.gallarypage{
+    max-width: 1000px;    
+    margin: 80px auto; 
+    justify-content: space-between;
     align-items: center;
-    margin: auto; 
 }

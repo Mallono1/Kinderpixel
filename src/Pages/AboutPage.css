@@ -1,0 +1,48 @@
+.aboutpage{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.aboutpage-left{
+    flex-basis: 40%;
+    position: relative;
+}
+.aboutpage-right{
+    flex-basis: 50%;
+}
+.aboutpage_img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.playbutton2{
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.4s;
+    /*background: #fff;
+    border: none;
+    border-radius: 50%;
+    
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: 0.4s; */
+}
+.aboutpage h2{
+    font-weight: 600;
+    font-size: 32px;
+    color: #000F38;
+}
+.aboutpage p{
+    font-size: 14px;
+    color: #000F38;
+    margin-top: 10px;
+}
