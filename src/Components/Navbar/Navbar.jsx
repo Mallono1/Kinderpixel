@@ -30,13 +30,13 @@ const Navbar = () => {
         <li>
           <LinkRouter to="/Wettbewerb">Wettbewerb</LinkRouter>
         </li>
-        <li>About us</li>
+        <li><LinkRouter to="/About">About us</LinkRouter></li>
 
-        <li>Rating</li>
+        <li><LinkRouter to="/Rating">Rating</LinkRouter></li>
 
-        <li>Testimonials</li>
+        {/* <li>Testimonials</li> */}
 
-        <li>Kontakt</li>
+        <li><LinkRouter to="/Contact">Contact</LinkRouter></li>
       </ul>
       <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
       <img src={logo} alt="" className="logo" />

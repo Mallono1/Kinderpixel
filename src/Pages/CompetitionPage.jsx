@@ -5,12 +5,12 @@ import Gallery from "../Components/Gallery";
 function CompetitionPage() {
   return (
     <div>
-      <Gallery />
+      <p> <Gallery /></p>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
-      Gallery2
+      
     </div>
   );
 }

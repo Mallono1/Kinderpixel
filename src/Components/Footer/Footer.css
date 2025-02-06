@@ -6,9 +6,13 @@
     border-top: 1px solid #797979;
     padding: 15px 0;
 }
+.footer p{
+    margin-left: 20px;
+}
 .footer ul li{
     list-style: none;
     display: inline-block;
     margin-left: 20px;
+    margin-right: 20px;
 
 }

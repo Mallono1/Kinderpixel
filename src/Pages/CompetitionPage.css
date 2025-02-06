@@ -1,0 +1,8 @@
+div p{
+    max-width: 700px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto; 
+}
