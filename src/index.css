@@ -19,13 +19,19 @@ a{
 }
 .btn{
   background: #45a4f1;
-  color: #212121;
-  padding: 14px 25px;
+  color: white;
+  padding: 10px 20px;
   font-size: 16px;
-  border-radius: 30px;
+  border-radius: 5px;
   cursor: pointer;
   border: 0;
   outline: 0;
+ }
+ .rating button:hover{
+  background-color: #d353c2fb;
+ }
+ .header-text button:hover{
+  background-color: #d353c2fb;
  }
 
  /* ----- media query ---------*/
