@@ -1,6 +1,20 @@
-.gallarypage{
-    max-width: 1000px;    
-    margin: 80px auto; 
-    justify-content: space-between;
-    align-items: center;
+.text {
+    margin: 60px auto;
+    display: flex; /* Added */
+    justify-content: center;
+    align-items: center; 
+    font-weight: 500;
+}
+
+.gallarypage {
+       
+    margin: 20px auto; 
+    display: flex; /* Added */
+    align-items: center;   
+    justify-items: center;
+}
+.flex{
+    text-align: center;
+    margin: 60px 10px 200px 10px;
+   
 }

@@ -16,7 +16,7 @@ const Gallery = () => {
         <img src={gallery_1} alt="" />
         <div className="caption">
           <img src={gallery_icon_1} alt="" />
-          <p>Alterstufe 0-4</p>
+          <p>Alterstufe 2-4</p>
         </div>
       </div>
       <div className="gallery">
