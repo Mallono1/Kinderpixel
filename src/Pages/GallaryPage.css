@@ -1,0 +1,7 @@
+h1 {
+    margin: 60px auto;
+    display: flex; /* Added */
+    justify-content: center;
+    align-items: center; 
+    font-weight: 500;
+}
