@@ -2,6 +2,10 @@ import React from "react";
 import "./Header.css";
 
 const Header = () => {
+  const navigateToAbout = () => {
+    window.location.href = "/About";
+  };
+
   return (
     <div className="header container" id="header">
       <div className="header-text">
@@ -10,7 +14,9 @@ const Header = () => {
         <p>Gewinnt Preise für Euch und Eure Schul/Kita/Hort</p>
         <p>Im Gesamtwert von 15.000 €</p>
 
-        <button className="btn">Explore more</button>
+        <button className="btn" onClick={navigateToAbout}>
+          Explore more
+        </button>
       </div>
     </div>
   );
