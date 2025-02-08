@@ -47,3 +47,31 @@
     opacity: 1;
     padding-top: 0;
 }
+
+/* ----- media query ---------*/
+
+@media (max-width: 732px){
+    .gallerys{
+        flex-direction: column;
+    }
+    .gallery{
+        flex-basis: 90%;
+    }
+    
+
+/* @media(max-width: 490px){
+    .header{
+        margin-top: 70px;
+    }
+    .header-text h1{
+        
+        max-width: 400px;
+        margin: auto;
+    }
+    .header-text p{
+        font-size: 14px;
+        max-width: 400;
+        margin: 15px auto 20px;
+        
+    }
+} */

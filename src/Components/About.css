@@ -46,3 +46,18 @@
     color: #000F38;
     margin-top: 10px;
 }
+
+/* ----- media query ---------*/
+
+@media (max-width: 732px){
+    .about{
+        flex-direction: column;
+    }
+    .about-left{
+        flex-basis: 90%;
+        margin: 20px;
+        order: 2;
+    }
+    .about-right{
+        flex-basis: 90%;
+    }

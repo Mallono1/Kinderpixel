@@ -34,4 +34,35 @@
     .header{
         margin-top: 70px;
     }
+    .header-text h1{
+        font-size: 40px;
+    }
+    .header-text h2{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .header-text p{
+        font-size: 16px;
+        max-width: 600;
+        margin: 15px auto 20px;
+        line-height: 1.4;
+        
+    }
+}
+
+@media(max-width: 490px){
+    .header{
+        margin-top: 70px;
+    }
+    .header-text h1{
+        
+        max-width: 400px;
+        margin: auto;
+    }
+    .header-text p{
+        font-size: 14px;
+        max-width: 400;
+        margin: 15px auto 20px;
+        
+    }
 }
