@@ -65,3 +65,14 @@
 .contact form button:hover {
     background-color: #d353c2fb ;
 }
+
+/* ----- media query ---------*/
+
+@media (max-width: 732px){
+    .contact{
+        display: block;
+    }
+    .contact-kpi{
+        padding: 20px;
+    }
+}

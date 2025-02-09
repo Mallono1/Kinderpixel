@@ -1,5 +1,5 @@
 .rating{
-    margin: 50px auto;
+    margin: 80px auto;
     width: 90%;
     text-align: center; 
 }
@@ -12,12 +12,18 @@
 }
 .ratingFotos img{
     width: 23%;
-    padding: 10px;
-    border-radius: 20px;    
+    border-radius: 10px;    
 }
-.btn-arrow{
-    background-color: aquamarine;
-    max-height: 10;
-    text-align: center;
-    
+
+/* ----- media query ---------*/
+
+@media (max-width: 732px){
+    .rating{
+        
+        flex-wrap: wrap;
+    }
+    .ratingFotos img{
+        width: 40%;
+        margin-bottom: 25px;
+    }
 }
