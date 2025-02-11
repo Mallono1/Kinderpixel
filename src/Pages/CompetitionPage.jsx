@@ -30,13 +30,16 @@ function CompetitionPage() {
           })
           .catch((err) => console.log(err));
       };  
+      const navigateToCreateProject = () => {
+        window.location.href = "/CreateProject";
+      };
 
     return (
         
         <div className="ProjectListPage">
             
             <h1>Current Contestants</h1>
-            <button onClick={handleDelete} className="delete-button">
+            <button onClick={navigateToCreateProject} className="delete-button">
                         Submit your drawing
                     </button>
             <ul className="project-grid">
