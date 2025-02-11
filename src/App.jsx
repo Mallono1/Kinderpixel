@@ -7,6 +7,8 @@ import AboutPage from "./Pages/AboutPage";
 import RatingPage from "./Pages/RatingPage";
 import ContactPage from "./Pages/ContactPage";
 import GallaryPage from "./Pages/GallaryPage";
+import CreateProjectPage from "./Pages/CreateProjectPage";
+
 
 import Footer from "./Components/Footer/Footer";
 
@@ -18,6 +20,7 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/Wettbewerb" element={<CompetitionPage />} />
+        <Route path="/CreateProject" element={<CreateProjectPage />} />
         <Route path="/About" element={<AboutPage />} />
         <Route path="/Rating" element={<RatingPage />} />
         <Route path="/Contact" element={<ContactPage />} />

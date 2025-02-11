@@ -1,25 +1,62 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 import "./CompetitionPage.css";
-import Gallery from "../Components/Gallery";
+
+
+const API_URL = "https://kinderpixel-backend.onrender.com";
 
 function CompetitionPage() {
-  return (
-    <div>
-    <div className="text">
-    <h1>Chose your Gallery</h1> </div>
-    
-    <Gallery />
-      <div className="gallarypage"> 
-            
+    const [projects, setProjects] = useState([]);
+
+    const getAllProjects = () => {
+        axios
+        .get(`${API_URL}/projects`)
+        .then((response) => setProjects(response.data))
+        .catch((error) => console.error(error));
+    };
+
+    useEffect(() => {
+        getAllProjects();
+    }, []);
+
+
+    const handleDelete = () => {                    //  <== ADD
+        // Make a DELETE request to delete the project
+        axios
+          .delete(`${API_URL}/projects/${projectId}`)
+          .then(() => {
+            navigate("/projects");
+          })
+          .catch((err) => console.log(err));
+      };  
+
+    return (
         
-      </div>
-      <div className="flex">
-          <h2>Here you see all Gallary-Pages from Kids 2-14 years!</h2>
-          <span>Click on the Gallary and you will see all paintings from children in that age.</span>
+        <div className="ProjectListPage">
+            
+            <h1>Current Contestants</h1>
+            <button href={listing.listing_url} onClick={handleDelete} className="delete-button">
+                        Submit your drawing
+                    </button>
+            <ul className="project-grid">
+            {projects.map((project) => {
+                return (
+                <li key={project.id} className="project-card">
+                    <img src={project.picture_url} alt={project.title} />
+                    <h2>{project.title}</h2>
+                    <p>{project.description}</p>
+                    <p className="author">{project.author}, {project.city}</p>
+                    <button onClick={handleDelete} className="delete-button">
+                        Delete
+                    </button>
+                </li>
+                );
+            })}     
+           </ul>
         </div>
-      
-    </div>
-  );
+      );
+
 }
 
 export default CompetitionPage;
