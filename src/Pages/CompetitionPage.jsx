@@ -36,7 +36,7 @@ function CompetitionPage() {
         <div className="ProjectListPage">
             
             <h1>Current Contestants</h1>
-            <button href={listing.listing_url} onClick={handleDelete} className="delete-button">
+            <button onClick={handleDelete} className="delete-button">
                         Submit your drawing
                     </button>
             <ul className="project-grid">
