@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Unicorn land",
+      "description": "My drawing shows two unicorns floating in the air in a place where all unicorns live.",
+      "picture_url": "https://res.cloudinary.com/dxw9g6te7/image/upload/v1738416335/drawing17_xmbxmq.jpg",
+      "author": "Jannes Kunne",
+      "city": "Berlin",
+      "school": "Primary School Berlin"
+    },
+    {
+      "id": 2,
+      "title": "My best friend",
+      "description": "My drawing shows my best friend, my dog Marley surrounded by many hearts.",
+      "picture_url": "https://res.cloudinary.com/dxw9g6te7/image/upload/v1738416336/drawing22_iglklr.jpg",
+      "author": "Lena Nees",
+      "city": "Hamburg",
+      "school": "Primary School Hamburg"
+    },
+    {
+      "id": 3,
+      "title": "My family portrait",
+      "description": "My drawing shows a portrait of my family. My mom, my dad, my sister and me.",
+      "picture_url": "https://res.cloudinary.com/dxw9g6te7/image/upload/v1738416334/drawing16_dtwn0q.jpg",
+      "author": "Dylan Smith",
+      "city": "Munich",
+      "school": "Primary school Munich"
+    },
+    {
+      "id": 4,
+      "title": "My favorite animals",
+      "description": "My drawing shows two of my favorite animals, the polar bear.",
+      "picture_url": "https://res.cloudinary.com/dxw9g6te7/image/upload/v1738416334/drawing11_hvu73e.jpg",
+      "author": "Lukas Oster",
+      "city": "Heidelberg",
+      "school": "Primary School Heidelberg"
+    }
+  ]

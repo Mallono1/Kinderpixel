@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+
 import "./CompetitionPage.css";
 
 
@@ -21,16 +21,17 @@ function CompetitionPage() {
     }, []);
 
 
-    const handleDelete = () => {                    //  <== ADD
+    const handleDelete = (id) => {                    //  <== ADD
         // Make a DELETE request to delete the project
         axios
-          .delete(`${API_URL}/projects/${projectId}`)
+          .delete(`${API_URL}/projects/${id}`)
           .then(() => {
-            navigate("/projects");
+            setProjects(projects.filter(project => project.id !== id));
           })
           .catch((err) => console.log(err));
       };  
-      const navigateToCreateProject = () => {
+
+      const navigateToCreateProject = () => {  //link to CreateProject
         window.location.href = "/CreateProject";
       };
 
@@ -39,7 +40,7 @@ function CompetitionPage() {
         <div className="ProjectListPage">
             
             <h1>Current Contestants</h1>
-            <button onClick={navigateToCreateProject} className="delete-button">
+            <button onClick={navigateToCreateProject} className="nav-to-cp">
                         Submit your drawing
                     </button>
             <ul className="project-grid">

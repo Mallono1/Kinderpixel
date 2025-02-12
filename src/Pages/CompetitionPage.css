@@ -73,14 +73,14 @@
     padding: 0.5em 1em;
     font-size: 0.9em;
     color: white;
-    background-color: #D72638; 
+    background-color: #d72638; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
 
-  .delete-button{
+  .nav-to-cp{
     margin-top: 1em;
     background: #45a4f1;
     color: white;
@@ -91,6 +91,11 @@
     border: 0;
     outline: 0;
    }
+
+   .nav-to-cp:hover{
+    background-color: #d353c2fb; 
+    }
+
   
   .delete-button:hover {
     background-color: #d353c2fb; 
