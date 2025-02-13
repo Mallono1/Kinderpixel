@@ -22,8 +22,7 @@ const About = () => {
       <div className="about-right">
         <h2>About Kinderpixel</h2>
         <p>
-          Wir fördern die Kraativität von Kindern und annimieren mehr Zeit mit
-          Stift und Papier zu verbringen.{" "}
+        We promote children's creativity and encourage them to spend more time with pen and paper.{" "}
         </p>
       </div>
     </div>

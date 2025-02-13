@@ -28,7 +28,7 @@ const Navbar = () => {
           <LinkRouter to="/">Home</LinkRouter>
         </li>
         <li>
-          <LinkRouter to="/Wettbewerb">Wettbewerb</LinkRouter>
+          <LinkRouter to="/Competition">Competition</LinkRouter>
         </li>
         <li><LinkRouter to="/About">About us</LinkRouter></li>
 

@@ -11,7 +11,7 @@ import gallery_icon_4 from "../assets/img/hand-logo2.png";
 
 const Gallery = () => {
   return (
-    <div className="gallerys" id="wettbewerb">
+    <div className="gallerys" id="Competition">
       <div className="gallery">
         <img src={gallery_1} alt="" />
         <div className="caption">

@@ -46,11 +46,11 @@ function Testimonials() {
                 </div>
               </div>
               <p>
-                Meine Tochter hat am Wettbewerb teilgenohmen und hatte ganz viel
-                Spaß dabei. bla bla bla Alle Malbilder meiner Tochter, die wir
-                zuhause aufbewahrt haben, wurden von Eridian ebenfalls
-                eingescannt. Nun bewahren wir diese auf unserem PC auf und im
-                Netz.
+                My daughter took part in the competition and had a lot
+                Have fun with it. blah blah blah All of my daughter's coloring pictures that we
+                have kept at home, were also provided by Eridian
+                scanned. Now we keep these on our PC and in
+                Network.
               </p>
             </div>
           </li>
@@ -64,11 +64,11 @@ function Testimonials() {
                 </div>
               </div>
               <p>
-                Meine Tochter hat am Wettbewerb teilgenohmen und hatte ganz viel
-                Spaß dabei. bla bla bla Alle Malbilder meiner Tochter, die wir
-                zuhause aufbewahrt haben, wurden von Eridian ebenfalls
-                eingescannt. Nun bewahren wir diese auf unserem PC auf und im
-                Netz.
+                My daughter took part in the competition and had a lot
+                Have fun with it. blah blah blah All of my daughter's coloring pictures that we
+                have kept at home, were also provided by Eridian
+                scanned. Now we keep these on our PC and in
+                Network.
               </p>
             </div>
           </li>
@@ -82,11 +82,11 @@ function Testimonials() {
                 </div>
               </div>
               <p>
-                Meine Tochter hat am Wettbewerb teilgenohmen und hatte ganz viel
-                Spaß dabei. bla bla bla Alle Malbilder meiner Tochter, die wir
-                zuhause aufbewahrt haben, wurden von Eridian ebenfalls
-                eingescannt. Nun bewahren wir diese auf unserem PC auf und im
-                Netz.
+                My daughter took part in the competition and had a lot
+                Have fun with it. blah blah blah All of my daughter's coloring pictures that we
+                have kept at home, were also provided by Eridian
+                scanned. Now we keep these on our PC and in
+                Network.
               </p>
             </div>
           </li>
@@ -100,11 +100,11 @@ function Testimonials() {
                 </div>
               </div>
               <p>
-                Meine Tochter hat am Wettbewerb teilgenohmen und hatte ganz viel
-                Spaß dabei. bla bla bla Alle Malbilder meiner Tochter, die wir
-                zuhause aufbewahrt haben, wurden von Eridian ebenfalls
-                eingescannt. Nun bewahren wir diese auf unserem PC auf und im
-                Netz.
+                My daughter took part in the competition and had a lot
+                Have fun with it. blah blah blah All of my daughter's coloring pictures that we
+                have kept at home, were also provided by Eridian
+                scanned. Now we keep these on our PC and in
+                Network.
               </p>
             </div>
           </li>
