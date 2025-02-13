@@ -28,8 +28,17 @@ function CompetitionPage() {
           .then(() => {
             setProjects(projects.filter(project => project.id !== id));
           })
-          .catch((err) => console.log(err));
-      };  
+        };
+
+        const handleEdit = (id, updatedProject) => {
+          // Make a PUT request to update the project
+          axios
+            .put(`${API_URL}/projects/${id}`, updatedProject)
+            .then((response) => {
+            setProjects(projects.map(project => project.id === id ? response.data : project));
+            })
+            .catch((err) => console.log(err));
+        };
 
       const navigateToCreateProject = () => {  //link to CreateProject
         window.location.href = "/CreateProject";
@@ -51,8 +60,13 @@ function CompetitionPage() {
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
                     <p className="author">{project.author}, {project.city}</p>
-                    <button onClick={handleDelete} className="delete-button">
+                    <button  className="delete-button" onClick={() => handleDelete(project.id)}>
+                    
                         Delete
+                    </button>
+                    <button  className="edit-button" onClick={() => handleEdit(project.id)}>
+                    
+                        Edit
                     </button>
                 </li>
                 );
