@@ -36,7 +36,7 @@ a{
 
  /* ----- media query ---------*/
 
-@media(max-width: 1200px){
+@media(max-width: 732px){
     .container{
       padding-left: 5%;
       padding-right: 5%;
