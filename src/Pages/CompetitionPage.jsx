@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 import "./CompetitionPage.css";
 
@@ -54,8 +55,8 @@ function CompetitionPage() {
             <h1>Current Contestants</h1>
             <button onClick={navigateToCreateProject} className="nav-to-cp">
                         Submit your drawing
-                    </button>
-                    <br></br>
+            </button>
+            <br></br>
             
                    
             <ul className="project-grid">
@@ -70,10 +71,10 @@ function CompetitionPage() {
                     
                         Delete
                     </button>
-                    <button  className="edit-button" onClick={navigateToEditProject}>
+                    <Link  className="edit-button" onClick={navigateToEditProject}>
                     
                         Edit
-                    </button>
+                    </Link>
                 </li>
                 );
             })}     

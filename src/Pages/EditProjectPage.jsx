@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./EditProjectPage.css";
 
 const API_URL = "https://kinderpixel-backend.onrender.com";
@@ -12,29 +12,58 @@ function EditProjectPage(props) {
   const [city, setCity] = useState("");
 
 
-  
+  const { id } = useParams(); 
   const navigate = useNavigate(); 
 
-  
-  const handleSubmit = (e) => {                          // <== ADD
+  const requestBody = { title, description, author, city };
+ 
+  const handleFormSubmit = (e) => {                          // <== ADD
     e.preventDefault();
-
     const requestBody = { title, description, author, city };
+    // const requestBody = { title, description, author, city };
     axios
-      .post(`${API_URL}/projects`, requestBody)
-      .then((response) => {
+        .put(`${API_URL}/projects/${id}`, requestBody)
+        .then((response) => {
+        // setProjects(projects.map(project => project.id === id ? response.data : project));
         // Once the project is created navigate to Project List Page
-        navigate(-1);
+        navigate(`/projects/${id}`)
+      })
+      
+  };
+  const deleteProject = () => {                    //  <== ADD
+    // Make a DELETE request to delete the project
+    axios
+      .delete(`${API_URL}/projects/${id}`)
+      .then(() => {
+        // Once the delete request is resolved successfully
+        // navigate back to the list of projects.
+        navigate("/projects");
+      })
+      .catch((err) => console.log(err));
+  }; 
+  useEffect(() => {                                 // <== ADD
+    axios
+      .get(`${API_URL}/projects/${id}`)
+      .then((response) => {
+        /* 
+          We update the state with the project data coming from the response.
+          This way we set inputs to show the actual title and description of the project
+        */
+        const oneProject = response.data;
+        setTitle(oneProject.title);
+        setDescription(oneProject.description);
+        setAuthor(oneProject.author)
+        setCity(oneProject.city)
       })
       .catch((error) => console.log(error));
-  };
-
+    
+  }, [id]);
   
   return (
     <div className="editProjectPage">
       <h1>Edit Your Drawing</h1>
 
-      <form onSubmit={handleSubmit}>          {/*  <== UPDATE   */}
+      <form onSubmit={handleFormSubmit}>          {/*  <== UPDATE   */}
         <label>Title:</label>
         <input
           type="text"
@@ -67,8 +96,9 @@ function EditProjectPage(props) {
           onChange={(e) => setCity(e.target.value)}
         />
 
-        <button className="submit-button" type="submit">Submit</button>
+        <button className="edit-button" type="submit">Edit</button>
       </form>
+      <button onClick={deleteProject}>Delete Project</button>
     </div>
   );
 }
