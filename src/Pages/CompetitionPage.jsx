@@ -31,7 +31,7 @@ function CompetitionPage() {
         };
 
         // const handleEdit = (id, updatedProject) => {
-        //   // Make a PUT request to update the project
+        //    Make a PUT request to update the project
         //   axios
         //     .put(`${API_URL}/projects/${id}`, updatedProject)
         //     .then((response) => {
@@ -55,6 +55,9 @@ function CompetitionPage() {
             <button onClick={navigateToCreateProject} className="nav-to-cp">
                         Submit your drawing
                     </button>
+                    <br></br>
+            
+                   
             <ul className="project-grid">
             {projects.map((project) => {
                 return (
@@ -75,6 +78,7 @@ function CompetitionPage() {
                 );
             })}     
            </ul>
+           
         </div>
       );
 
