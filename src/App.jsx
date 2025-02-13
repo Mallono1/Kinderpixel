@@ -11,6 +11,7 @@ import CreateProjectPage from "./Pages/CreateProjectPage";
 
 
 import Footer from "./Components/Footer/Footer";
+import EditProjectPage from "./Pages/EditProjectPage";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/Wettbewerb" element={<CompetitionPage />} />
         <Route path="/CreateProject" element={<CreateProjectPage />} />
+        <Route path="/EditProject" element={<EditProjectPage />} />
         <Route path="/About" element={<AboutPage />} />
         <Route path="/Rating" element={<RatingPage />} />
         <Route path="/Contact" element={<ContactPage />} />
