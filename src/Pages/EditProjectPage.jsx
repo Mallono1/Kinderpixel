@@ -9,23 +9,22 @@ function EditProjectPage(props) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [author, setAuthor] = useState("");
-  const [image, setImage] = useState("");
   const [city, setCity] = useState("");
 
 
   
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
 
   
   const handleSubmit = (e) => {                          // <== ADD
     e.preventDefault();
 
-    const requestBody = { title, description, author, image, city };
+    const requestBody = { title, description, author, city };
     axios
       .post(`${API_URL}/projects`, requestBody)
       .then((response) => {
         // Once the project is created navigate to Project List Page
-        navigate("/projects");
+        navigate(-1);
       })
       .catch((error) => console.log(error));
   };

@@ -25,7 +25,7 @@ function CreateProjectPage(props) {
       .post(`${API_URL}/projects`, requestBody)
       .then((response) => {
         // Once the project is created navigate to Project List Page
-        navigate("/projects");
+        navigate(-1);
       })
       .catch((error) => console.log(error));
   };
