@@ -79,6 +79,17 @@
     cursor: pointer;
     transition: background-color 0.3s;
   }
+  .edit-button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    color: white;
+    background-color: #d3f510; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
 
   .nav-to-cp{
     margin-top: 1em;

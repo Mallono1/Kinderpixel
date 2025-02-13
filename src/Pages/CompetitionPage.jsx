@@ -30,18 +30,21 @@ function CompetitionPage() {
           })
         };
 
-        const handleEdit = (id, updatedProject) => {
-          // Make a PUT request to update the project
-          axios
-            .put(`${API_URL}/projects/${id}`, updatedProject)
-            .then((response) => {
-            setProjects(projects.map(project => project.id === id ? response.data : project));
-            })
-            .catch((err) => console.log(err));
-        };
+        // const handleEdit = (id, updatedProject) => {
+        //   // Make a PUT request to update the project
+        //   axios
+        //     .put(`${API_URL}/projects/${id}`, updatedProject)
+        //     .then((response) => {
+        //     setProjects(projects.map(project => project.id === id ? response.data : project));
+        //     })
+        //     .catch((err) => console.log(err));
+        // };
 
       const navigateToCreateProject = () => {  //link to CreateProject
         window.location.href = "/CreateProject";
+      };
+      const navigateToEditProject = () => {  //link to CreateProject
+        window.location.href = "/EditProject";
       };
 
     return (
@@ -64,7 +67,7 @@ function CompetitionPage() {
                     
                         Delete
                     </button>
-                    <button  className="edit-button" onClick={() => handleEdit(project.id)}>
+                    <button  className="edit-button" onClick={navigateToEditProject}>
                     
                         Edit
                     </button>
