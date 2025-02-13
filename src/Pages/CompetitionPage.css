@@ -111,3 +111,6 @@
   .delete-button:hover {
     background-color: #d353c2fb; 
     }
+    .edit-button:hover {
+      background-color: #45a4f1; 
+      }

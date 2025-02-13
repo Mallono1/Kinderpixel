@@ -1,0 +1,58 @@
+.editProjectPage h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 0.8em;
+    margin-top: 0.5em;
+
+  }
+
+  .submit-button {
+    width: 200px;
+    margin-top: 1em;
+    background: #fff;
+    color: 333133;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    margin-bottom: 2em;
+   }
+  
+  .submit-button:hover {
+    background-color: #d353c2fb; 
+    }
+
+    .editProjectPage {
+      background: #45a4f1;
+      border: 1px solid grey;
+      box-shadow: 0px 2px 3px grey;
+      width:400px;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      margin-top: 80px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+      
+      label {
+        width: 200px;
+        display: block;
+      }
+      
+      input,
+      textarea {
+        width: 300px;
+        padding: 10px;
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .editProjectPage form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }

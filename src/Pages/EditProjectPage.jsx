@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "./CreateProjectPage.css";
+import "./EditProjectPage.css";
 
 const API_URL = "https://kinderpixel-backend.onrender.com";
 
@@ -32,7 +32,7 @@ function EditProjectPage(props) {
 
   
   return (
-    <div className="EditProjectPage">
+    <div className="editProjectPage">
       <h1>Edit Your Drawing</h1>
 
       <form onSubmit={handleSubmit}>          {/*  <== UPDATE   */}
