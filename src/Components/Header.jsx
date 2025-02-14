@@ -1,9 +1,10 @@
 import React from "react";
 import "./Header.css";
+import { navigate } from "react-router-dom";
 
 const Header = () => {
   const navigateToAbout = () => {
-    window.location.href = "/About";
+    navigate("/About");
   };
 
   return (

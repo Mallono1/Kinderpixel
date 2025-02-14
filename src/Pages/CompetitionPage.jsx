@@ -71,13 +71,11 @@ function CompetitionPage() {
                     <p>{project.description}</p>
                     <p className="author">{project.author}, {project.city}</p>
                     <button  className="delete-button" onClick={() => handleDelete(project.id)}>
-                    
                         Delete
                     </button>
-                    <Link  className="edit-button" onClick={() => navigateToEditProject(project.id)}>
-                    
+                    <button  className="edit-button" onClick={() => navigateToEditProject(project.id)}>
                         Edit
-                    </Link>
+                    </button>
                 </li>
                 );
             })}     
