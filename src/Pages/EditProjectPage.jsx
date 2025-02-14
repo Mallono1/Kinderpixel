@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import "./EditProjectPage.css";
@@ -15,7 +15,7 @@ function EditProjectPage(props) {
   const { id } = useParams(); 
   const navigate = useNavigate(); 
 
-  const requestBody = { title, description, author, city };
+  
  
   const handleFormSubmit = (e) => {                          // <== ADD
     e.preventDefault();
