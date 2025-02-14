@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import "./CompetitionPage.css";
 
@@ -9,6 +10,8 @@ const API_URL = "https://kinderpixel-backend.onrender.com";
 
 function CompetitionPage() {
     const [projects, setProjects] = useState([]);
+
+    const navigate = useNavigate();
 
     const getAllProjects = () => {
         axios
@@ -42,10 +45,10 @@ function CompetitionPage() {
         // };
 
       const navigateToCreateProject = () => {  //link to CreateProject
-        window.location.href = "/CreateProject";
+        navigate("/CreateProject");
       };
       const navigateToEditProject = (id) => {  //link to CreateProject
-        window.location.href = `/EditProject/${id}`;
+        navigate(`/EditProject/${id}`);
       };
 
     return (
