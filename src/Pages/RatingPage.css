@@ -1,0 +1,14 @@
+.rating{
+    margin: 80px auto;
+    width: 40%;
+    text-align: center; 
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    text-align: center;
+}
+.ratingFotos {
+    flex-wrap: wrap;
+}
