@@ -9,6 +9,8 @@ function EditProjectPage(props) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [author, setAuthor] = useState("");
+  const [picture_url, setPictureUrl] = useState("");
+  const [school, setSchool] = useState("");
   const [city, setCity] = useState("");
 
 
@@ -19,14 +21,14 @@ function EditProjectPage(props) {
  
   const handleFormSubmit = (e) => {                          // <== ADD
     e.preventDefault();
-    const requestBody = { title, description, author, city };
+    const requestBody = { title, description, author, city, school, picture_url };
     // const requestBody = { title, description, author, city };
     axios
         .put(`${API_URL}/projects/${id}`, requestBody)
         .then((response) => {
         // setProjects(projects.map(project => project.id === id ? response.data : project));
         // Once the project is created navigate to Project List Page
-        navigate(`/projects/${id}`)
+        navigate(`/Competition`)
       })
       
   };
@@ -37,7 +39,7 @@ function EditProjectPage(props) {
       .then(() => {
         // Once the delete request is resolved successfully
         // navigate back to the list of projects.
-        navigate("/projects");
+        navigate("/Competition");
       })
       .catch((err) => console.log(err));
   }; 
@@ -52,8 +54,10 @@ function EditProjectPage(props) {
         const oneProject = response.data;
         setTitle(oneProject.title);
         setDescription(oneProject.description);
-        setAuthor(oneProject.author)
-        setCity(oneProject.city)
+        setAuthor(oneProject.author);
+        setSchool(oneProject.school);
+        setCity(oneProject.city);
+        setPictureUrl(oneProject.picture_url);
       })
       .catch((error) => console.log(error));
     
@@ -96,9 +100,25 @@ function EditProjectPage(props) {
           onChange={(e) => setCity(e.target.value)}
         />
 
+        <label>School:</label>
+        <textarea
+          type="text"
+          name="school"
+          value={school}
+          onChange={(e) => setSchool(e.target.value)}
+        />
+
+        <label>Image URL:</label>
+        <textarea
+          type="text"
+          name="picture_url"
+          value={picture_url}
+          onChange={(e) => setPictureUrl(e.target.value)}
+        />
+
         <button className="edit-button" type="submit">Edit</button>
       </form>
-      <button onClick={deleteProject}>Delete Project</button>
+      {/* <button onClick={deleteProject}>Delete Project</button> */}
     </div>
   );
 }

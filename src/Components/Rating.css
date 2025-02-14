@@ -17,13 +17,13 @@
 
 /* ----- media query ---------*/
 
-/* @media (max-width: 732px){
-    .rating{
-        
+@media (max-width: 732px){
+    .ratingFotos {
         flex-wrap: wrap;
     }
-    .ratingFotos img{
+
+    .ratingFotos img {
         width: 40%;
         margin-bottom: 25px;
     }
-} */
+}

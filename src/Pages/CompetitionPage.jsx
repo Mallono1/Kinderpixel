@@ -44,8 +44,8 @@ function CompetitionPage() {
       const navigateToCreateProject = () => {  //link to CreateProject
         window.location.href = "/CreateProject";
       };
-      const navigateToEditProject = () => {  //link to CreateProject
-        window.location.href = "/EditProject";
+      const navigateToEditProject = (id) => {  //link to CreateProject
+        window.location.href = `/EditProject/${id}`;
       };
 
     return (
@@ -71,7 +71,7 @@ function CompetitionPage() {
                     
                         Delete
                     </button>
-                    <Link  className="edit-button" onClick={navigateToEditProject}>
+                    <Link  className="edit-button" onClick={() => navigateToEditProject(project.id)}>
                     
                         Edit
                     </Link>

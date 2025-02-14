@@ -9,7 +9,8 @@ function CreateProjectPage(props) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [author, setAuthor] = useState("");
-  const [image, setImage] = useState("");
+  const [picture_url, setPictureUrl] = useState("");
+  const [school, setSchool] = useState("");
   const [city, setCity] = useState("");
 
 
@@ -20,7 +21,7 @@ function CreateProjectPage(props) {
   const handleSubmit = (e) => {                          // <== ADD
     e.preventDefault();
 
-    const requestBody = { title, description, author, image, city };
+    const requestBody = { title, description, author, picture_url, city };
     axios
       .post(`${API_URL}/projects`, requestBody)
       .then((response) => {
@@ -66,6 +67,22 @@ function CreateProjectPage(props) {
           name="city"
           value={city}
           onChange={(e) => setCity(e.target.value)}
+        />
+
+        <label>School:</label>
+        <textarea
+          type="text"
+          name="school"
+          value={school}
+          onChange={(e) => setSchool(e.target.value)}
+        />
+
+        <label>Image URL:</label>
+        <textarea
+          type="text"
+          name="picture_url"
+          value={picture_url}
+          onChange={(e) => setPictureUrl(e.target.value)}
         />
 
         <button className="submit-button" type="submit">Submit</button>
